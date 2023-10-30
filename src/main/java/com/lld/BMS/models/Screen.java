@@ -1,5 +1,6 @@
 package com.lld.BMS.models;
 
+import com.lld.BMS.enums.Feature;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,7 +24,7 @@ public class Screen extends BaseModel {
     private List<Feature> screenFeatures;
 
     @ManyToOne
-    @JoinColumn(name = "theatre_id")
+//    @JoinColumn(name = "theatre_id")
     private Theatre theatre;
 
 }

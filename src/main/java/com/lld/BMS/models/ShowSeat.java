@@ -1,5 +1,6 @@
 package com.lld.BMS.models;
 
+import com.lld.BMS.enums.ShowSeatStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,7 +14,7 @@ public class ShowSeat extends BaseModel {
     //   1   1
     //   M    1
     @ManyToOne
-    private Show show;
+    private Showw showw;
 
     @Enumerated(EnumType.ORDINAL)
     private ShowSeatStatus showSeatStatus;

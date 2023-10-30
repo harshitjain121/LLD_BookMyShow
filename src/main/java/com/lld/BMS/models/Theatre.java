@@ -15,13 +15,13 @@ public class Theatre extends BaseModel {
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "region_id")
-    private Region region; //todo - sandeep_code
+//    @JoinColumn(name = "region_id")
+    private Region region;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "theatre")
     private List<Screen> screens;
 
-    // TODO: naman_bhalla
+    // TODO
 //    // 1 : m
 //    // 1  :  1
 //    @OneToMany

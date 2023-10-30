@@ -19,11 +19,17 @@ public class Seat extends BaseModel {
 
 
     @ManyToOne
-    @JoinColumn(name = "seat_type_id")
+//    @JoinColumn(name = "seat_type_id")
     private SeatType seatType;
 
     @ManyToOne
-    @JoinColumn(name = "screen_id")
+//    @JoinColumn(name = "screen_id")
     private Screen screen;
 
 }
+
+// 100 seats
+// VIP, Gold and Silver
+// VIP seatType -> 20 seats || Seat to SeatType -> ManyToOne
+// GOLD -> 50
+// SILVER -> 30

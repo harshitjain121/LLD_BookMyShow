@@ -1,4 +1,4 @@
-package com.lld.BMS.models;
+package com.lld.BMS.enums;
 
 public enum ShowSeatStatus {
 
